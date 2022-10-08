@@ -1,0 +1,148 @@
+<div class="container-fluid">
+    <form>
+      <div class="row g-3">
+        <div class="col-2">
+          <label> Name: </label>
+        </div>
+        <div class="col">
+          <input
+  
+          />
+          <app-status></app-status>
+        </div>
+      </div>
+      <div class="row g-3">
+        <div class="col-2">
+          <label> Age: </label>
+        </div>
+        <div class="col">
+          <input type="text" name="age" placeholder="Age" formControlName="age" />
+          <app-status></app-status>
+        </div>
+      </div>
+      <div class="row g-3">
+        <div class="col-2">
+          <label> Email: </label>
+        </div>
+        <div class="col">
+          <input
+  
+          />
+          <app-status></app-status>
+        </div>
+      </div>
+      <div formGroupName="address">
+        <h4>Address</h4>
+        <app-status></app-status>
+        <div class="row g-3">
+          <div class="col-2">
+            <label>Street: </label>
+          </div>
+          <div class="col">
+            <input
+              type="text"
+              name="street"
+              placeholder="Street"
+              formControlName="street"
+            />
+            <app-status></app-status>
+          </div>
+        </div>
+        <div class="row g-3">
+          <div class="col-2">
+            <label>City: </label>
+          </div>
+          <div class="col">
+            <input
+  
+            />
+            <app-status></app-status>
+          </div>
+        </div>
+        <div class="row g-3">
+          <div class="col-2">
+            <label>State: </label>
+          </div>
+          <div class="col">
+            <input
+  
+            />
+            <app-status></app-status>
+          </div>
+        </div>
+        <div class="row g-3">
+          <div class="col-2">
+            <label>Zip Code: </label>
+          </div>
+          <div class="col">
+            <input
+  
+            />
+            <app-status></app-status>
+          </div>
+        </div>
+      </div>
+      <div formArrayName="hobbies">
+        <h4>Hobbies</h4>
+        <button
+  
+          >
+          + Add hobby
+        </button>
+        <app-status></app-status>
+        
+        <div
+  
+          class="row g-3"
+        >
+          <div class="col-2">
+            <label>Hobby:</label>
+          </div>
+          <div class="col">
+            <input
+  
+            />
+            <app-status></app-status>
+          </div>
+        </div>
+      </div>
+      <div class="row g-3">
+        <div class="col-2">
+          <button type="submit" class="btn btn-primary">
+  
+            Submit
+          </button>
+        </div>
+      </div>
+    </form>
+    <br />
+    <div class="row g-3">
+      <div class="col-2">
+        <button class="btn btn-primary">Set Value</button>
+      </div>
+      <div class="col-2">
+        <button class="btn btn-primary">
+          Patch Value
+        </button>
+      </div>
+      <div class="col-2">
+        <button class="btn btn-primary">Reset</button>
+      </div>
+      <div class="col-2">
+        <button class="btn btn-primary">
+          Modify Validators
+        </button>
+      </div>
+      <div class="col-2">
+        <button class="btn btn-primary">
+          Enable/Disable
+        </button>
+      </div>
+    </div>
+  </div>
+  <br />
+  
+  <br />
+  
+<app-status></app-status>
+  
